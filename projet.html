@@ -114,25 +114,26 @@ h4{
   margin:12px 0;
 }
 
-pre{
-  white-space:pre-wrap;
-  font-size:14px;
-  line-height:1.7;
-  margin:0;
-  font-family:inherit;
-  color:var(--text);
-}
-
 p, li{
   font-size:14px;
   line-height:1.8;
   color:var(--muted);
+  margin-top:0;
 }
 
 .blue{color:#1f4fd8;font-weight:800}
 .green{color:#16a34a;font-weight:800}
 .orange{color:#f59e0b;font-weight:800}
-.italic{font-style:italic;color:#0ea5e9;line-height:1.8}
+.italic{
+  font-style:italic;
+  color:#0ea5e9;
+  line-height:1.8;
+  background:#f0f9ff;
+  padding:14px;
+  border-radius:12px;
+  border-left:4px solid #0ea5e9;
+  margin:14px 0;
+}
 
 .table-card{
   background:linear-gradient(180deg,#ffffff,#f8fbff);
@@ -226,6 +227,48 @@ ul.clean{
   line-height:1.8;
 }
 
+.info-card{
+  padding:30px;
+  border-radius:16px;
+  background:#f7f9fc;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  margin:18px 0;
+}
+
+.info-card h4{
+  font-size:28px;
+  margin-bottom:15px;
+  color:#1d3557;
+}
+
+.info-card p{
+  font-size:17px;
+  line-height:1.8;
+  color:#333;
+}
+
+.bullets{
+  margin:0;
+  padding-left:20px;
+}
+
+.bullets li{
+  margin-bottom:8px;
+}
+
+.checklist{
+  margin:0;
+  padding-left:0;
+  list-style:none;
+}
+
+.checklist li{
+  padding-left:0;
+  margin-bottom:8px;
+  color:#1e293b;
+  font-weight:600;
+}
+
 @media(max-width:768px){
   header{
     font-size:18px;
@@ -248,7 +291,7 @@ ul.clean{
     font-size:16px;
   }
 
-  pre, p, li, td{
+  p, li, td{
     font-size:13px;
   }
 
@@ -258,6 +301,18 @@ ul.clean{
 
   table{
     min-width:680px;
+  }
+
+  .info-card{
+    padding:18px;
+  }
+
+  .info-card h4{
+    font-size:22px;
+  }
+
+  .info-card p{
+    font-size:14px;
   }
 }
 
@@ -286,78 +341,99 @@ ul.clean{
     <span class="orange">Principe :</span> Solidarité Privé → État → Public
   </div>
 
-  <!-- SECTION 1 -->
   <div class="section">
     <h2>1. MODÈLE DE FINANCEMENT PAR SOLIDARITÉ TOTALE (PÉRÉQUATION)</h2>
 
     <h3>A. Principe général</h3>
 
-    <pre>
-PROJET : STATION IA SCIENTIFIQUE (OFFLINE)
-Synthèse
-PROJET : STATION IA SCIENTIFIQUE (OFFLINE)
+    <p><strong>PROJET :</strong> STATION IA SCIENTIFIQUE (OFFLINE)</p>
+    <p><strong>Synthèse</strong></p>
+    <p><strong>PROJET :</strong> STATION IA SCIENTIFIQUE (OFFLINE)</p>
 
-Le projet repose sur un modèle de mécénat technologique croisé. L'investissement, l'équipement et le service logiciel du secteur public sont intégralement financés par l'activité générée auprès des établissements privés.
+    <p>
+      Le projet repose sur un modèle de mécénat technologique croisé.
+      L'investissement, l'équipement et le service logiciel du secteur public
+      sont intégralement financés par l'activité générée auprès des établissements privés.
+    </p>
 
-<section style="padding: 30px; border-radius: 16px; background: #f7f9fc; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-  <h2 style="font-size: 28px; margin-bottom: 15px; color: #1d3557;">
-    Secteur Privé (Financeur)
-  </h2>
-  <p style="font-size: 17px; line-height: 1.8; color: #333;">
-    Les établissements privés souscrivent à une contribution de solidarité nationale.
-    En contrepartie, ils bénéficient gratuitement de l’accès à l’application web,
-    à condition de disposer déjà d’ordinateurs et d’une connexion Internet.
-  </p>
-  <p style="font-size: 17px; line-height: 1.8; color: #333;">
-    Leur contribution sert exclusivement à financer l’équipement matériel
-    des zones démunies.
-  </p>
-</section>
+    <div class="info-card">
+      <h4>Secteur Privé (Financeur)</h4>
+      <p>
+        Les établissements privés souscrivent à une contribution de solidarité nationale.
+        En contrepartie, ils bénéficient gratuitement de l’accès à l’application web,
+        à condition de disposer déjà d’ordinateurs et d’une connexion Internet.
+      </p>
+      <p>
+        Leur contribution sert exclusivement à financer l’équipement matériel
+        des zones démunies.
+      </p>
+    </div>
 
-Une partie de ces fonds est directement reversée à l’État pour financer l’équipement matériel du secteur public, tandis que l’autre partie est allouée à la société Axokit.
-    </pre>
+    <p>
+      Une partie de ces fonds est directement reversée à l’État pour financer
+      l’équipement matériel du secteur public, tandis que l’autre partie est allouée
+      à la société Axokit.
+    </p>
 
     <div class="italic">
-      « En contrepartie, la société fournit gracieusement le logiciel IA (maintenance et mode hors-ligne inclus). Quant au petit-déjeuner quotidien, l’État en assure le financement via ses bénéfices — qu’il alloue librement aux écoles publiques prioritaires — ainsi que la mise en œuvre via ses partenaires (ex: Bii). »
+      « En contrepartie, la société fournit gracieusement le logiciel IA
+      (maintenance et mode hors-ligne inclus). Quant au petit-déjeuner quotidien,
+      l’État en assure le financement via ses bénéfices — qu’il alloue librement
+      aux écoles publiques prioritaires — ainsi que la mise en œuvre via ses partenaires
+      (ex: Bii). »
     </div>
 
     <h3>B. Bénéficiaires</h3>
 
-    <pre>
-• Secteur Public (Bénéficiaire intégral) : Pour les écoles publiques, le coût est de 0 €. Elles reçoivent gratuitement :
-o L'équipement matériel (ordinateurs puissants, écrans, mobilier).
-o La licence logicielle Axokit et ses mises à jour.
-o L'installation et le support technique.
+    <ul class="bullets">
+      <li><strong>Secteur Public (Bénéficiaire intégral)</strong> : Pour les écoles publiques, le coût est de 0 €.</li>
+      <li>Elles reçoivent gratuitement l'équipement matériel (ordinateurs puissants, écrans, mobilier).</li>
+      <li>La licence logicielle Axokit et ses mises à jour.</li>
+      <li>L'installation et le support technique.</li>
+    </ul>
 
-• Rôle de l'État : L'État agit uniquement comme pilote et régulateur. Il définit les priorités de déploiement (quelles écoles équiper en premier) sans jamais avoir à décaisser de budget ou faire d'avance de trésorerie.
-    </pre>
+    <p>
+      <strong>Rôle de l'État :</strong> L'État agit uniquement comme pilote et régulateur.
+      Il définit les priorités de déploiement (quelles écoles équiper en premier)
+      sans jamais avoir à décaisser de budget ou faire d'avance de trésorerie.
+    </p>
   </div>
 
-  <!-- SECTION 2 -->
   <div class="section">
     <h2>2. STRATÉGIE D'ÉQUIPEMENT ET MONTÉE EN PUISSANCE</h2>
 
-    <pre>
-Le déploiement dans le public est directement lié au rythme de signature dans le privé. C'est un modèle vertueux : plus le privé se modernise, plus le public s'équipe gratuitement.
+    <p>
+      Le déploiement dans le public est directement lié au rythme de signature dans le privé.
+      C'est un modèle vertueux : plus le privé se modernise, plus le public s'équipe gratuitement.
+    </p>
 
-• Zéro Avance de Trésorerie : Ni pour l'État, ni pour la société.
-• Achat en Volume
-• Installation Clé en Main
-    </pre>
+    <ul class="bullets">
+      <li>Zéro Avance de Trésorerie : Ni pour l'État, ni pour la société.</li>
+      <li>Achat en Volume.</li>
+      <li>Installation Clé en Main.</li>
+    </ul>
 
     <h3>A. Détails techniques</h3>
 
-    <pre>
-Bleu
-Le modèle est conçu pour équiper progressivement les établissements, sans aucune avance de trésorerie de la part de l’état ou de la société.
+    <p>
+      Le modèle est conçu pour équiper progressivement les établissements,
+      sans aucune avance de trésorerie de la part de l’État ou de la société.
+    </p>
 
-🖥️Part ÉTAT – Équipement matériel
-Note : Grâce aux achats en volume auprès de grossistes, 400 à 600 € permettent d’acquérir un ordinateur suffisamment puissant pour faire fonctionner l’IA localement.
+    <p>
+      <strong>🖥️ Part ÉTAT – Équipement matériel</strong><br>
+      Grâce aux achats en volume auprès de grossistes, 400 à 600 €
+      permettent d’acquérir un ordinateur suffisamment puissant
+      pour faire fonctionner l’IA localement.
+    </p>
 
-Part SOCIÉTÉ – Logiciel & installation
+    <p>
+      <strong>Part SOCIÉTÉ – Logiciel & installation</strong>
+    </p>
 
-ANNÉE 2 ET ANNÉES SUIVANTES – Service & Extension
-    </pre>
+    <p>
+      <strong>ANNÉE 2 ET ANNÉES SUIVANTES – Service & Extension</strong>
+    </p>
 
     <div class="table-card">
       <div class="table-wrap">
@@ -366,7 +442,7 @@ ANNÉE 2 ET ANNÉES SUIVANTES – Service & Extension
             <tr>
               <th>Année</th>
               <th>Part É T A T (%) Écoles Publiques</th>
-              <th>Part A X O K I T (%)(Société)</th>
+              <th>Part A X O K I T (%) (Société)</th>
               <th>Nb Ordis (600€)</th>
             </tr>
           </thead>
@@ -401,56 +477,62 @@ ANNÉE 2 ET ANNÉES SUIVANTES – Service & Extension
     </div>
   </div>
 
-  <!-- SECTION 3 -->
   <div class="section">
     <h2>3. POINTS CLÉS POUR L’ÉTAT</h2>
 
-    <table>
-      <tr><th>Avantages</th><th>Impact Ministère</th></tr>
-      <tr><td>Budget matériel</td><td>0 €</td></tr>
-      <tr><td>Budget logiciel</td><td>0 €</td></tr>
-      <tr><td>Risque financier</td><td>Nul</td></tr>
-      <tr><td>Équité sociale</td><td>Totale</td></tr>
-    </table>
+    <div class="table-card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Avantages</th>
+              <th>Impact Ministère</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Budget matériel</td><td>0 €</td></tr>
+            <tr><td>Budget logiciel</td><td>0 €</td></tr>
+            <tr><td>Risque financier</td><td>Nul</td></tr>
+            <tr><td>Équité sociale</td><td>Totale</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-    <pre>
-Synthèse politique
-✔️ Aucun investissement initial
-✔️ IA 100 % offline
-✔️ Complément direct de l’enseignement
-    </pre>
+    <ul class="checklist" style="margin-top:14px;">
+      <li>✔️ Aucun investissement initial</li>
+      <li>✔️ IA 100 % offline</li>
+      <li>✔️ Complément direct de l’enseignement</li>
+    </ul>
   </div>
 
-  <!-- SECTION 4 -->
   <div class="section">
     <h2>4. FONCTIONNEMENT : BORNE DE SAVOIR</h2>
 
-    <pre>
-Optimisation : Un seul ordinateur suffit.
-Groupes de 3 élèves.
-Sessions réparties.
-Planning hebdomadaire.
-Libre-service.
-Auditorium avec vidéoprojecteur.
-    </pre>
+    <ul class="bullets">
+      <li>Optimisation : Un seul ordinateur suffit.</li>
+      <li>Groupes de 3 élèves.</li>
+      <li>Sessions réparties.</li>
+      <li>Planning hebdomadaire.</li>
+      <li>Libre-service.</li>
+      <li>Auditorium avec vidéoprojecteur.</li>
+    </ul>
   </div>
 
-  <!-- SECTION 5 -->
   <div class="section">
     <h2>5. ARGUMENTS STRATÉGIQUES</h2>
 
-    <pre>
-Trajectoire de réussite
-Télétravail international
-Vision 2030
-Leapfrogging
-Souveraineté technologique
-Éducation 3.0
-Compétitivité mondiale
-    </pre>
+    <ul class="bullets">
+      <li>Trajectoire de réussite</li>
+      <li>Télétravail international</li>
+      <li>Vision 2030</li>
+      <li>Leapfrogging</li>
+      <li>Souveraineté technologique</li>
+      <li>Éducation 3.0</li>
+      <li>Compétitivité mondiale</li>
+    </ul>
   </div>
 
-  <!-- SECTION 6 -->
   <div class="section">
     <div class="subtitle">
       Projet Public : Station IA Scientifique (OFFLINE)<br>
